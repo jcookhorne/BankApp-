@@ -12,5 +12,7 @@ public interface AccountService {
 	
 	AccountTo accountView(int accountId);
 	
+	AccountTo addNewAccount(AccountTo account);
+	
 
 }

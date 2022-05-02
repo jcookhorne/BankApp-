@@ -1,6 +1,7 @@
 package com.bank_app.entity;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class AdminEntity {
 
 	@Id
@@ -29,7 +31,7 @@ public class AdminEntity {
 	private String adminMobileNumber;
 	
 	@Column(name="admin_username")
-	private String adminUserName;
+	private String adminUsername;
 	
 	@Column(name="admin_password")
 	private String adminPassword;

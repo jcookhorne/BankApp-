@@ -43,6 +43,12 @@ public class AccountServiceImpl implements AccountService {
 		return account;
 	}
 
+	@Override
+	public AccountTo addNewAccount(AccountTo account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 }

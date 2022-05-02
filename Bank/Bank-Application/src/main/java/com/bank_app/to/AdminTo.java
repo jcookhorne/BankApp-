@@ -12,6 +12,6 @@ public class AdminTo {
 	private String adminFirstName;
 	private String adminLastName;
 	private String adminMobileNumber;
-	private String adminUserName;
+	private String adminUsername;
 	private String adminPassword;
 }
