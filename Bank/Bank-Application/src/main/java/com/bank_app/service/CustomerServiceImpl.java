@@ -29,4 +29,15 @@ public class CustomerServiceImpl implements CustomerService{
 		return cust;
 	}
 
+
+	@Override
+	public CustomerTo createCustomer(CustomerTo customer) {
+		// TODO Auto-generated method stub
+		CustomerEntity customerEntity = new CustomerEntity(
+				customer.getCustomerId(), customer.getCustomerAddress(), customer.getCustomerEmail(),
+				customer.getCustomerFirstName(), customer.getCustomerLastName(), customer.getCustomerMobileNumber());
+		customerDao.save(customerEntity);
+		return customer;
+	}
+
 }

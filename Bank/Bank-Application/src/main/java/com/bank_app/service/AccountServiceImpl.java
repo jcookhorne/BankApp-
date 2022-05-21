@@ -45,8 +45,11 @@ public class AccountServiceImpl implements AccountService {
 
 	@Override
 	public AccountTo addNewAccount(AccountTo account) {
-		// TODO Auto-generated method stub
-		return null;
+		AccountEntity accountEntity = new AccountEntity(
+				account.getAccountId(), account.getAccountName(), account.getAccountBalance(),
+				account.getAccountUsername(), account.getAccountPassword(), account.getCustomerId());
+		accountDao.save(accountEntity);
+		return account;
 	}
 
 	

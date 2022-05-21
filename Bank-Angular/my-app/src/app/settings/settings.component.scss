@@ -1,0 +1,27 @@
+
+.title{
+    margin: 20px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+.line{
+    margin-top: 2vw;
+    border-top-width: 2px;
+    border-top-color: black;
+}
+.mat-card-profile{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.icon{
+    transform: scale(2.5);
+    display: inline-block;
+}
+.user{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.mat-card-body{
+    margin-top: 5px;
+}

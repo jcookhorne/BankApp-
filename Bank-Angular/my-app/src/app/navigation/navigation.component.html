@@ -1,34 +1,42 @@
-<nav class="navbar navbar-expand-sm bg-dark text-dark">
-    <div class="navbar-logo">
-        <a routerLink="">
-    <img src="https://images.unsplash.com/photo-1628233292917-ce50c18eac73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlc3MlMjBraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" width="100%">
-    </a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav">
-         <li class="nav-item dropdown ">
-            
-            <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-               About
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item"  routerLink="about">About Us</a>
-                <a class="dropdown-item"  routerLink="contact">Contact </a>
-                <a class="dropdown-item"  routerLink="contact">Testimonies </a>
-              </div>
-           
-         </li>
-              <li class="nav-item " >
-                <a class="navbar-brand text-dark" routerLink="services"> Your info</a>
-             </li>
-             <li class="nav-item" >
-                <a class="navbar-brand text-dark" routerLink="events">admin Info</a>
-             </li>
-             <li class="nav-item">
-                <a class="navbar-brand text-dark" routerLink="giving">logout</a>
-             </li>
 
-        </ul>
-    </div>
-</nav>
+
+    <a class="close-navbar-toggler collapsed" 
+    data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false"
+     aria-label="Toggle navigation">
+    </a>
+<!-- This is the bar and the logo that will be for collapse -->
+<div class="pos-f-t">
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           <img src="data:image/png;base64,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"
+     width="100%" height="50vh">
+      </button>
+    </nav>
+
+    <!-- This is the bar for navigations that come after the collapse -->
+    <div class="collapsed" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class="list-group bg navbar-dark">
+                <!-- This login will not be used its just so i can change routing -->
+                <li class="list-group-item " >
+                    <a class="text-white" routerLink="login">Login</a>
+                 </li>
+                <li class="list-group-item " >
+                  <a class="text-white" routerLink="accountHome">Accounts</a>
+               </li>
+               <li class="list-group-item">
+                  <a class="text-white" routerLink="history">Transaction History</a>
+               </li>
+               <li class="list-group-item">
+                <a class="text-white" routerLink="settings">Settings</a>
+             </li>
+             <li class="list-group-item">
+                <a class="text-white" routerLink="logout">Logout</a>
+             </li>
+  
+          </ul>
+        </div>
+      </div>
+  </div>

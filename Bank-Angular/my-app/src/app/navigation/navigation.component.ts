@@ -16,6 +16,7 @@ export class NavigationComponent implements OnInit {
       this.toggleLogin = true;
     }
   }
+  
   constructor() { }
 
   ngOnInit(): void {

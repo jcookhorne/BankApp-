@@ -9,5 +9,5 @@ public interface CustomerService {
 
 	CustomerTo customerInfo(int customerId);
 	
-	
+	CustomerTo createCustomer(CustomerTo customer);
 }

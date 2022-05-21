@@ -29,4 +29,8 @@ public class AccountController {
 	AccountTo accountView(@PathVariable("accountId") int aid) {
 		return accountService.accountView(aid);
 	}
+	@PostMapping("/account-add")
+	AccountTo addNewAccount(@RequestBody AccountTo account) {
+		return accountService.addNewAccount(account);
+	}
 }
