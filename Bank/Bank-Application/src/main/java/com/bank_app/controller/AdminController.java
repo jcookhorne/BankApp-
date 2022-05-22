@@ -19,7 +19,7 @@ public class AdminController {
 	// within the class or interface refrenced below or access the objects within them.
 	AdminService adminService;
 	
-	@GetMapping
+	@GetMapping("/adminInfo/{adminId}")
 	AdminTo adminInfo(@PathVariable("adminId") int aid) {
 		return adminService.adminInfo(aid);
 	}
