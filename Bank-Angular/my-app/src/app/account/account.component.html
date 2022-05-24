@@ -1,10 +1,16 @@
 
 <!-- Goal is to actually call name of account from database -->
 <mat-card class="mat-card-body bg-dark">
-<mat-card-title class="account text-white">Checkings</mat-card-title>
-<mat-card-header class="balance text-white">500.00</mat-card-header>
+<mat-card-title class="account text-white">{{account.accountName}}</mat-card-title>
+<mat-card-header class="balance text-white">{{account.accountBalance}}</mat-card-header>
 <mat-card-subtitle class="text-white">Available Balance</mat-card-subtitle>
 </mat-card>
+
+<!-- <mat-card class="mat-card-body bg-dark">
+  <mat-card-title class="account text-white">Savings</mat-card-title>
+  <mat-card-header class="balance text-white">800.00</mat-card-header>
+  <mat-card-subtitle class="text-white">Available Balance</mat-card-subtitle>
+</mat-card> -->
 
 <mat-card class="mat-card-body bg-dark">
   <mat-card-title class="account text-white">Savings</mat-card-title>
